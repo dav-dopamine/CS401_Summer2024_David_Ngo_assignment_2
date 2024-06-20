@@ -1,0 +1,45 @@
+Test Case 1: Adding Items to Cart
+Actions:
+cart.addCart(book1);
+cart.addCart(book2);
+cart.addCart(e1);
+cart.addCart(e2);
+cart.addCart(shirt1);
+cart.addCart(shirt2);
+
+Expected Outcome:
+All items (books, electronics, and clothing) should be successfully added to the cart.
+Observations:
+The displayCart() method correctly displays all items with their respective details (ID, name, price, and specific attributes for each type).
+The total price reflects the sum of all added items.
+
+Test Case 2: Removing Electronics
+Actions:
+cart.removeCart(e1);
+cart.removeCart(e2);
+Expected Outcome:
+Electronics e1 (GPU) and e2 (Smartphone) should be removed from the cart.
+Observations:
+After removal, the displayCart() method shows the updated cart contents without the electronics items.
+The total price is correctly updated to reflect the cost after removing the electronics.
+
+Test Case 3: Removing Books
+Actions:
+cart.removeCart(book1);
+cart.removeCart(book2);
+Expected Outcome:
+Books book1 (Eragon) and book2 (The Fault in Our Stars) should be removed from the cart.
+Observations:
+After removal, the displayCart() method shows the updated cart contents without the books.
+The total price is correctly updated to reflect the cost after removing the books.
+
+Test Case 4: Adding Electronics Back
+Actions:
+cart.addCart(e1);
+cart.addCart(e2);
+Expected Outcome:
+Electronics e1 (GPU) and e2 (Smartphone) should be added back to the cart.
+Observations:
+After adding electronics back, the displayCart() method shows the updated cart contents including the electronics items.
+The total price is correctly updated to reflect the cost after adding the electronics items back.
+
